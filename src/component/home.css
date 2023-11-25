@@ -1,0 +1,119 @@
+.mainDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.searchField{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(52, 152, 219);
+    margin-top: 5px;
+    border-radius: 11em ;
+    width: 40%;
+    padding-left: 5px;
+    outline: 0;
+}
+.searchField:focus{
+    border: none;
+}
+.searchField input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: transparent;
+}
+.searchField span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    background-color: rgb(52, 152, 219);
+    border-radius: 0 11em 11em 0;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+}
+.ShowData{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 55%;
+}
+.tableData{
+    width: 80%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.tableHead1{
+    display: flex;
+    color: white;
+    background-color: blueviolet;
+    justify-content: space-between;
+}
+.tableHead2{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    
+}
+
+
+.tableField1{
+    width: 20%;
+    border: 1px solid black;
+    text-align: center;
+    text-wrap: wrap;
+}
+.tableField2{
+    width: 35%;
+    border: 1px solid black;
+    text-align: center;
+    text-wrap: wrap;
+}
+.tableField3{
+    width: 10%;
+    border: 1px solid black;
+    text-align: center;
+    text-wrap: wrap;
+}
+.tableField4{
+    width: 35%;
+    border: 1px solid black;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+@media (max-width : 500px){
+    .mainDiv{
+        overflow: hidden;
+    }
+    .searchField{
+        width: 80%;
+    }
+    .ShowData{
+        display: block;
+        width: 100%;
+        height: 55vh;
+        overflow: hidden;
+        overflow: auto;
+    }
+    .tableData{
+        width: 700px;
+    }
+    
+    .tableField{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+}
