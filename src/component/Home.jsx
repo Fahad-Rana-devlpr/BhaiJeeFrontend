@@ -47,7 +47,8 @@ const Home = () => {
     const loadData = async () => {
       try {
         const searchedData = await axios.get(
-          `http://localhost:3001/`
+          `http://localhost:3001/home`,
+          { cache: 'no-store' }
         );
         allData.current = searchedData.data.data
       } catch (error) {
